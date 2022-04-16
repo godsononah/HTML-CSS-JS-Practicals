@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transitions, Transforms, and Animation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-size=1">
+        <style>
+            .smooth {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                padding: 1em 2em;
+                width: 10em;
+                border-radius: 1.5em;
+                color: #fff;
+                background-color: mediumblue;
+                transition-property: background-color, color, letter-spacing;
+                transition-duration: 0.3s, 2s, 0.3s;
+                transition-timing-function: ease-out, ease-in, ease-out;
+            }
+            .smooth:hover, .smooth:focus {
+                background-color: red;
+                letter-spacing: 3px;
+                color: black;
+            }
+            img {
+                width: 400px;
+                height: auto;
+                /*transform: rotate(-10deg);*/
+                /*transform: translate(90px, 60px);*/
+                /*transform: scale(1.5);*/
+                /*transform: skewY(30deg);*/
+                margin: 20em;
+                transform-origin: right top;
+                transition: all 0.3s ease-in-out;
+
+            }
+            #img1:hover, #img1:focus {
+                border: 10px ridge gold;
+                transform: scale(1.5) translate(50px, 30px) rotate(-5deg);
+            }
+            ul {
+                width: 70%;
+                height: 40%;
+                background-color: lightblue;
+                flex-wrap: wrap;
+                border: 3px ridge blue;
+                border-radius: 3em;
+                align-items: stretch;
+                list-style-type: none;
+                padding: 0;
+                margin: .5em;
+                perspective: 800;
+            }
+            ul img {
+                float: left;
+                padding: 0;
+                margin: 0;
+                transform: rotateX(45deg);
+            }
+            #link {
+                margin-top: 600px;
+                border-radius: 1em;
+                padding: 1em 3em;
+                color: white;
+        
+            }
+            #hlink {
+                margin-top: 600px;
+                margin-bottom: -600px;
+            }
+            #link a {
+                text-decoration: none;
+                color: white;
+                background-color: red;
+                padding: 1em 3em;
+                border-radius: 1em;
+                /*animation-name: colors;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;*/
+                animation: slide 10s linear infinite alternate-reverse;
+            }
+            @keyframes colors {
+                0% {background-color: red;}
+                20% {background-color: orange;}
+                40% {background-color: yellow;}
+                60% {background-color: green;}
+                80% {background-color: blue;}
+                100% {background-color: purple;}
+            }
+            @keyframes slide {
+                from {margin-left: 100%;}
+                to {margin-left: 0%;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Transitions, Transforms, and Animation</h1>
+            <p>by Godson Onah</p>
+        </header>
+
+        <h2>Transitions</h2>
+        <p><a href="_" class="smooth">awesonmesauce</a></p>
+
+        <h2>2D Transforms</h2>
+        <p><img src="images/HD-wallpaper-cyberpunk-style-modern-girl-cyberpunk-scifi-artist-artwork-digital-art-artstation.jpg" id="img1" alt="cyber-girl"></p>
+
+        <h2>3D Transforms</h2>
+        <ul>
+            <li><a href=""><img src="images/cyborg-wallpaper-preview.jpg" id="img11" alt=""></a></li>
+            <li><a href=""><img src="images/magda_katgoodloe-insta.jpg" id="img12" alt=""></a></li>
+            <li><a href=""><img src="images/HD-wallpaper-cyberpunk-style-modern-girl-cyberpunk-scifi-artist-artwork-digital-art-artstation.jpg" alt="" id="img13"></a></li>
+            <li><a href=""><img src="images/HD-wallpaper-sci-fi-cyberpunk-blue-hair-girl-woman-warrior.jpg" id="img14" alt=""></a></li>
+        </ul>
+
+        <h2 id="hlink">Keyframe Animation</h2>
+        <p id="link"><a href="">Magic!</a></p>
+    </body>
+</html>

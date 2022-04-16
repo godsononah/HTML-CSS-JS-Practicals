@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox</title>
+        <style>
+            header p {color: silver;}
+            #container {
+                display: flex;
+                border: 1px solid blue;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .box {
+                font-size: 15em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                width: 25%;
+                text-align: center;
+            }
+            .box.box1 {background-color: brown;}
+            .box.box2 {background-color: orange;}
+            .box.box3 {background-color: greenyellow;}
+            .box.box4 {background-color: blue;}
+            .box.box5 {background-color: purple;}
+            .box.box6 {background-color: brown;}
+            .box.box7 {background-color: orange;}
+            .box.box8 {background-color: greenyellow;}
+            .box.box9 {background-color: blue;}
+            .box.box10 {background-color: purple;}
+            #letters {
+                color: white;
+                background-color: blueviolet;
+                display: flex;
+                border: 1px solid red;
+                margin: 3em 0;
+                justify-content: center;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                background-color: #00af8f;
+                list-style: none;
+                padding: .5em;
+                margin: 0;
+            }
+            li {
+                color: white;
+                margin: 0 1em;
+            }
+            /* li#test {margin-right: auto;} */
+            li.logo {
+                margin-right: auto;
+            }
+
+            #heading {
+                display: flex;
+                color: white;
+                background-color: blue;
+                margin-top: 3em;
+                padding: 2px 0 2px 7px;
+                justify-content: center;
+            }
+            #main {
+                display: flex;
+            }
+            #main h2, #main p, #footing {padding-left: 7px;}
+            article {
+                background-color: rgb(248, 224, 193);
+                flex: 1 1 50%;
+                order: 2;
+            }
+            #news {
+                background-color: lightgreen;
+                flex: 1 1 25%;
+                order: 3;
+            }
+            #contact {
+                background-color: rgb(250, 118, 78);
+                flex: 1 1 25%;
+                order: 1;
+            }
+            #footing {
+                margin-top: 0;
+                display: flex;
+                color: white;
+                background-color: blue;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+            #heading, #main, #footing {
+                margin: 0;
+            }
+            #textpage {
+                border: 10px solid gold;
+                margin: 20px 15%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Flexbox</h1>
+            <p>by Godson Onah, <time datetime="2022-03-26">March 26, 2022</time></p>
+        </header>
+
+        <div id="container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+            <div class="box box7">7</div>
+            <div class="box box8">8</div>
+            <div class="box box9">9</div>
+            <div class="box box10">10</div>
+        </div>
+
+        <div id="letters">
+            <div>S</div>
+            <div>H</div>
+            <div>I</div>
+            <div>N</div>
+            <div>R</div>
+            <div>A</div>
+            <div>-</div>
+            <div>T</div>
+            <div>E</div>
+            <div>N</div>
+            <div>S</div>
+            <div>E</div>
+            <div>I</div>
+        </div>
+
+        <ul>
+            <li class="logo"><img src="images/award.png" alt="logo"></li>
+            <li>About</li>
+            <li id="test">Blog</li>
+            <li>Shop</li>
+            <li>Contact</li>
+        </ul>
+
+        <div id="textpage">
+            <div id="heading"><h1>Hip & Happenin' Headline</h1></div>
+            <div id="main">
+                <article>
+                    <h2>Where it's At</h2>
+                    <p>Intege ornare neque enim, non imperdict ex pellentesque sed. Sed congue, nunc ut rhoncus consectetur, diam purus
+                    venenatis lacus, vel sollicitudin nibh tortor sed nunc. Vestibulum at ante ac tortor ultricies gravida eget molestie nibh.
+                    Fusce tempor dictum lectus, id luctus sapien tristique suscipit. Cras volutpat lectus at urna vulputate pellentesque. Praesent
+                    eleifend, sapien ut finibus facilisis, orci augue elementum leo, a faucibus augue nibh ac urna. Aliquam erat volutpat. Sed ultrices
+                    tempus neque, nec laculis orci sollicitudin id. Mauris gravida congue sapien, vitae finibus nisi condimentum id. Donec turpis metus,
+                    euismod sed luctus sit amet, semper eu purus.
+                    </p>
+                </article>
+                <aside id="news"><h2>News</h2></aside>
+                <aside id="contact"><h2>Contact</h2></aside>
+            </div>
+            <p id="footing">The small print.</p>
+        </div>
+
+        <footer>
+            <br>
+            <br>
+            <hr>
+            <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+        </footer>
+    </body>

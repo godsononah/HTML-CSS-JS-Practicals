@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Rounds</title>
+        <style>
+            @import url(../styles/messagebox.css);
+            #answer {
+                width: 30%;
+                font-size: 3em;
+                padding: 2em;
+                border: 10px double gray;
+                margin: 3em auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="answer"></div>
+
+        <script src="../scripts/rounds.js"></script>
+        <script>
+            el = document.getElementById('answer');
+            /*var idAttribute = el.getAttribute('id');
+            alert(idAttribute);*/
+            el.setAttribute('id', 'message2');
+        </script>
+    </body>
+</html>

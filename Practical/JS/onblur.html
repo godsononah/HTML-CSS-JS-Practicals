@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Event Handlers</title>
+        <style>
+            @import url(../styles/hotel.css);
+            #feedback {
+                font-size: 0.7em;
+                color: red;
+            }
+            .entry {
+                padding-bottom: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>HTML Event Handlers</h1>
+
+            <h2>Onblur</h2>
+
+            <form method="POST" action="http://www.example.org/register">
+                <div class="entry">
+                    <label for="username">Create a username: </label>
+                    <input type="text" id="username" onblur="checkUsername()">
+                    <div id="feedback"></div>
+                </div>
+    
+                <div>
+                    <label for="password">Create a password: </label>
+                    <input type="password" id="password">
+        
+                    <input type="submit" id="submit" value="Sign up!">
+                </div>
+            </form>
+        </main>
+
+        <script src="../scripts/onblur.js"></script>
+    </body>
+</html>

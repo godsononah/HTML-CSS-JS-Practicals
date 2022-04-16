@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Box</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            header p {color: silver;}
+
+            #layout {
+                color: white;
+                display: grid;
+                border: 2px solid blue;
+                grid-template-rows: 100px 400px 100px;
+                grid-template-columns: 200px 500px 200px;
+                gap: 5px 5px;
+            }
+            #one {
+                background-color: rgb(212, 110, 110);
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            #two {
+                background-color: orange;
+            }
+            #three {
+                background-color: rgb(57, 221, 57);
+            }
+            #four {
+                background-color: rgb(163, 225, 236);
+            }
+            #five {
+                background-color: rgb(167, 7, 167);
+            }
+
+            #example {
+                text-align: center;
+                display: grid;
+                margin-top: 3em;
+                margin-bottom: 3em;
+                grid-template-rows: [header-start] 100px [content-start] 400px [footer-start] 100px;
+                grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+                grid-template-areas:
+                    "header header header"
+                    "ads    main   links"
+                    "footer footer footer";
+            }
+            #header1, #header2, #header3 {background-color: rgb(126, 167, 62);}
+            #ads {background-color: rgb(228, 155, 155);}
+            #main {background-color: rgb(219, 100, 193);}
+            #links {background-color: rgb(238, 207, 169);}
+            #footer1, #footer2, #footer3 {background-color: rgb(165, 165, 214);}
+
+            #littlegrid {
+                border: 2px solid purple;
+                display: grid;
+                margin: 3em 0;
+                grid-template-columns: 200px 200px;
+                grid-template-rows: 200px 200px;
+                grid-auto-columns: 100px;
+                grid-auto-rows: 100px;
+            }
+            #A {
+                background-color: rgb(115, 115, 241);
+                grid-row: 1 / 2;
+                grid-column: 2 / 3;
+            }
+            #B {
+                background-color: rgb(154, 219, 154);
+                grid-row: 3 / 4;
+                grid-column: 5 / 6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS GRID LAYOUT</h1>
+            <p>by Godson Onah</p>
+        </header>
+
+        <div id="layout">
+            <div id="one">One</div>
+            <div id="two">Two</div>
+            <div id="three">Three</div>
+            <div id="four">Four</div>
+            <div id="five">Five</div>
+        </div>
+
+        <div id="example">
+            <div id="header1"></div>
+            <div id="header2">Header</div>
+            <div id="header3"></div>
+            <div id="ads">Ads</div>
+            <div id="main">Main</div>
+            <div id="links">Links</div>
+            <div id="footer1"></div>
+            <div id="footer2">Footer</div>
+            <div id="footer3"></div>
+        </div>
+
+        <div id="littlegrid">
+            <div id="A">A</div>
+            <div id="B"><B></B></div>
+        </div>
+
+    </body>
+</html>

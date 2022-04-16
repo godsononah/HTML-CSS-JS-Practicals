@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo-Classes</title>
+        <style>
+            header p {color: silver;}
+            a:link {
+                color: maroon;
+            }
+            a:visited {
+                color: gray;
+            }
+            a:hover {
+                color: greenyellow
+            }
+            #first-line::first-line {letter-spacing: 9px;}
+            #first-letter::first-letter {
+                font-size: 300%;
+                color: orange;
+            }
+            #check {
+                font-size: 300%;
+                color: rgb(98, 0, 255);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Pseudo-Classes</h1>
+            <p>by Godson Onah, <time datetime="2022-03-26">March 26, 2022</time></p>
+        </header>
+
+        <h2>Link Pseudo-Classes</h2>
+
+        <h3>:link, :visited, :hover</h3>
+        <p><a href="index.html">[Back to Index]</a></p>
+
+        <h2>Pseudo-Elements</h2>
+        <p id="first-line">In some of the best cabbage-growing sections of the country, until within a comparatively few years it was the very general belief that cabbage would not well on upland. Accordingly the cabbage patch would be found on the lowest tillage land of the farm.</p>
+        <p id="first-letter">In some of the best cabbage-growing sections of the country, until within a comparatively few years it was the very general belief that cabbage would not well on upland. Accordingly the cabbage patch would be found on the lowest tillage land of the farm.</p>
+        
+        <h3>With Span (Instead of Using Pseudo-Elements</h3>
+        <p><span id="check">I</span> some of the best cabbage-growing sections of the country, until within a comparatively few years it was the very general belief that cabbage would not well on upland. Accordingly the cabbage patch would be found on the lowest tillage land of the farm.</p>
+
+        <footer>
+            <br>
+            <br>
+            <hr>
+            <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+        </footer>
+    </body>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Embedded Media</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>EMBEDDED MEDIA</h1>
+            <p>by Godson Onah, <time datetime="2022-03-26">March 26, 2022</time></p>
+        </header>
+
+        <h2>An Inline Frame</h2>
+        <iframe src="../bistro/glossary.html" width="400" height="250">
+            Read the <a href="../bistro/glossary.html">glossary</a>.
+        </iframe>
+
+        <h2>Embedding a video with iframe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7lVS5Ugo47s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <h3>'Buy that merch' by Jake Paul</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LvYbhJ6pryA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Multipurpose Embedder (embed)</h2>
+        <p><embed type="video/mp4" src="C:\Users\USER\Videos\Abbie Emmons\yt5s.com-How to use SCENE CARDS…to keep your readers on the edge of their s.mp4" width="320" height="256"></p>
+
+        <h2>Multipurpose Embedder (object)</h2>
+        <h3>without param elements</h3>
+        <p><object data="icons/twitter.svg" type="image/svg+xml">
+            <img src="../bistro/blackgoose.png" alt="">
+        </object></p>
+        <h3>with param elements</h3>
+        <p><object type="video/mp4" data="C:\Users\USER\Videos\Abbie Emmons\yt5s.com-How to use SCENE CARDS…to keep your readers on the edge of their s.mp4" width="320" height="256">
+            <param name="autostart" value="false">
+            <param name="controller" value="true">
+        </object></p>
+
+        <h2>Adding a Video to a Page</h2>
+        <p>An Abbie Emmons Tutorial Video<br>
+            <video src="C:\Users\USER\Videos\Abbie Emmons\yt5s.com-How to use SCENE CARDS…to keep your readers on the edge of their s.mp4" width="640" height="489" poster="" controls autoplay>Your browser does not support HTML5 video. Get the <a href="C:\Users\USER\Videos\Abbie Emmons\yt5s.com-How to use SCENE CARDS…to keep your readers on the edge of their s.mp4">MP4 video</a></video>
+        </p>
+
+        <h2>Adding an Audio to Page</h2>
+        <p>Play "Peru" by Fireboy DML</p>
+            <audio src="C:\Users\USER\Music\Fireboy_DML_-_Peru.mp3" controls preload="auto">
+                <p>Download "Peru":</p>
+                <a href="C:\Users\USER\Music\Fireboy_DML_-_Peru.mp3">MP3</a>
+            </audio>
+        
+        <p><a href="C:\Users\USER\Music\Fireboy_DML_-_Peru.mp3" target="_blank">Download</a> "Peru" by Fireboy DML</p>
+
+        <footer>
+            <br>
+            <br>
+            <hr>
+            <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+        </footer>
+    </body>

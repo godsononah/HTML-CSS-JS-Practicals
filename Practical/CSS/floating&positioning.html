@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Floating and Positioning</title>
+        <style>
+            body {
+                margin: 0;
+                box-sizing: border-box;
+                background-color: lightgoldenrodyellow;
+            }
+            header {
+                text-align: center;
+                color: lightcyan;
+                background-color: darkolivegreen;
+                margin-top: 0;
+                padding-bottom: 1px;
+            }
+            header p {color: silver;}
+            a {
+                color: darkblue;
+                text-decoration: none;
+                border: 1px solid darkblue;
+                padding-bottom: 1px;
+            }
+            a:hover {color: palevioletred;}
+            a:active {color: red;}
+            nav ul {
+                width: 14%;
+                text-align: left;
+                background-color: gold;
+                margin: 0;
+                padding-left: 3px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            nav ul li {
+                display: inline;
+                margin: 2px 5px;
+            }
+            main {
+                margin: 15px 15%;
+            }
+            main p {
+                color: black;
+            }
+            main p img {
+                height: 80px;
+                float: right;
+                margin: 0 1em;
+            }
+            span.tip {
+                float: right;
+                margin: 1em;
+                width: 200px;
+                color: #fff;
+                background-color: lightseagreen;
+                padding: 1em;
+            }
+            p#float {
+                float: left;
+                width: 300px;
+                margin: 1em;
+                background: white;
+            }
+            main p#first::first-letter {font-size: 3em;}
+            footer {
+                margin-top: 30%;
+            }
+            p#bottom {
+                padding-left: 5px;
+                padding-bottom: 0;
+            }
+            #container {
+                background: #f2f5d5;
+                border: 2px dashed green;
+                float: left;
+                width: 100%;
+            }
+            #container p {
+                float: left;
+                width: 44%;
+                padding: 2%;
+            }
+            footer p {
+                padding-left: 15%;
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#bottom" id="top">Go to bottom</a></li>
+                </ul>
+            </nav>
+            <h1>Floating and Positioning</h1>
+            <p>by Godson Onah, <time datetime="2022-03-26">March 26, 2022</time></p>
+        </header>
+
+        <main>
+            <p id="first"><img src="images/fah4.jpg" alt=""> After the cream is frozen rather stiff, prepare
+                a tub or bucket of coarsely chopped ice, with one-half less salt than you use for
+                freezing. To each ten pounds of ice, allow one quart of rock salt. Sprinkle a little
+                rock salt and cracked ice, and on this stand your mold, which is not filled, but is
+                covered with a lid, and pack it all around, leaving the top, of course, to pack later on.
+                Take your freezer near this tub. Remove the lid from the mold, and pack in the cream,
+                smoothing it down until you have filled it to overflowing. Smooth the top with a spatula
+                or limber knife, put over a sheet of waxed paper and adjust the lid.
+            </p>
+
+            <p><span class="tip">Tip: Make sure that your packing tub or bucket
+                has a hole below the top of the mold so the water will drain off.</span>
+                After the cream is frozen rather stiff, prepare a tub or bucket of
+                coarsely chopped ice, with one-half less salt than you use for freezing.
+                To each ten pounds of ice allow one quart of rock salt. Sprinkle a little
+                rock salt in the bottom of your bucket or tub, then put over a layer of
+                cracked ice, another layer of salt and cracked ice, and on this stand your
+                mold, which is not filled, but is covered with a lid, and pack it all around,
+                leaving the top, of course, to pack later on. Take your freezer near this tub.
+                Remove the lid from the mold, and pack in the cream, smoothing it down until you
+                have filled it to overflowing. Smooth the top with a spatula or limber knife, put
+                over a sheet of waxed paper and adjust the lid.
+            </p>
+
+            <p>If you wish to pack ice cream and serve it in forms or shapes, it must be molded
+                after the freezing. The handiest of all of these molds is either the brick or the melon mold.
+            </p>
+
+            <p id="float">After the ice cream is rather stiff, prepare a tub or bucket of coarsely
+                chopped ice, with one-half less salt than you use for freezing. To each ten pounds
+                of ice allow one quart of rock salt. Sprinkle a little rock salt in the bottom of your
+                bucket or tub, then put over a layer of cracked ice, another layer of salt and cracked, and
+                on this stand your mold, which is not filled, but is covered with a lid, and pack it all around,
+                leaving the top, of course, to pack later on. Take your freezer near this tub.
+            </p>
+
+            <p>Remove the lid from the mold, and pack in the cream, smoothing it down until you have filled it to
+                overflowing. Smooth the top with a spatula or limber knife, put over a sheet of waxed paper and adjust
+                the lid. Have a strip of muslin or cheese cloth dipped in hot paraffin or suet and quickly
+                bind the seam of the lid. This will remove all danger of salt water entering the pudding.
+                Now cover the mold thoroughly with ice and salt.
+            </p>
+
+            <p>Make sure that your packing tub or bucket has a hole below the top of the mold, so that
+                the salt water will be drained off. If you are packing in small molds, each mold, as fast as
+                it is closed, should be wrapped in wax paper and put down into the salt and ice. These must be filled
+                quickly and packed.
+            </p>
+
+            <p>As cold water is warmer than the ordinary freezing mixture, after you lift the can or mold, wipe off the salt,
+                hold it for a minute under the cold water spigot, then quickly wipe the top and bottom and remove the lid. Loosen the pudding with
+                a limber knife, hold the mold a little slanting, give it a shake, and nine times out of ten it will
+                come out quickly, having the perfect shape of the can or mold. If the cream still sticks and refuses
+                to come out quickly, with a towel wrung from warm water. Hot water spoils the gloss of puddings, and unless
+                you know exactly how to use it, the cream is too much melted to garnish.
+            </p>
+
+            <div id="container">
+                <p><strong>Etiam convallis</strong>, nulla ut ullamcorper mollis, ipsum purus imperdiet tellus, ut ultrices massa
+                    tortor vitae nulla. Fusce non arcu quam. Nullam lacinia facilisis lacus, et varius ligula imperdiet ut. Morbi molestie auctor magna,
+                    quis venenatis felis adipiscing sed. Aliquam ipsum nibh, dapibus sit amet tristique at, tincidunt in leo. Quisque
+                    accumsan lobortis lacus, id gravida tortor luctus et. Donec quis diam et odio volutpat blandit nec nec enim. Nam vitae
+                    vestibulum risus. Cras in adipiscing odio. Nam vel dolor id purus pretium suscipit quis in quam. Proin varius tincidunt
+                    facilisis. Maecenas eget filis ut nis ullamcorper pretium non at nulla. Etiam suscipit aliquet velit ac facilisis. Etiam
+                    egestas ante eu velit ullamcorper omare. Suspendisse vestibulum leo sed lectus posuere eget convallis nisi placerat. vestibulum
+                    porttitor egestas ornare.
+                </p>
+                <p><strong>Cras id ipsum dui.</strong> Donec semper congue lectus quis vulputate. Ut felis leo, bibendum at blandit non,
+                    luctus ac lorem. Nunc vitae ligula ut newque convallis sagittis. Quisque consequat orci sed arcu tincidunt et volutpat tellus
+                    tempor. Nulla vulputate ante nec felis elementum auctor. Duis magna neque, posuere eu hendrerit sit amet, dapibus quis quam.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dapibus dui dignissim dolor rutrum vel consequat nibh sagittis.
+                    Morbi non dolor diam, nec iaculis neque. Aenean at eros sit amet velit iaculis porttitor. Nam lobortis sodales augue, sit tincidunt
+                    erat sagittis eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenacos. Donec ut ultricies velit.
+                    Quisque tempor fermentum ante, quis tempus est fringilla eu.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p id="bottom"><a href="#top">Go to top</a></p>
+            <hr>
+            <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+        </footer>
+    </body>

@@ -1,0 +1,44 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    color: rgb(220, 220, 233);
+    text-align: center;
+    text-shadow: 1em 1em .3 gray;
+    font-size: 1.5em;
+}
+main {
+    color: rgb(236, 229, 243);
+    background-color: rgb(15, 12, 3);
+    padding: 2em 2em 10em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 1em auto;
+    margin-top: 2em auto;
+    width: 50%;
+}
+h2 {
+    color: antiquewhite;
+}
+#submit {
+    background-color: greenyellow;
+}
+#hotelName, #hotelInfo {
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+footer {
+    font-size: 0.9em;
+    color: rgb(46, 41, 41);
+    margin-top: 15em;
+}
+footer p {
+    padding-left: 2em;
+}
+/*#pool, #gym{
+
+}*/

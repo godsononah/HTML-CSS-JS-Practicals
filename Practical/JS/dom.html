@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model (DOM)</title>
+        <meta charset="utf-8">
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>Document Object Model (DOM)</h1>
+            <p>by Godson Onah</p>
+        </header>
+
+        <main>
+            <div class="intro"><img src="../images/HD-wallpaper-cyberpunk-style-modern-girl-cyberpunk-scifi-artist-artwork-digital-art-artstation.jpg" alt="cybergirl" id="girl"></div>
+
+            <div class="intro"></div>
+            <div class="intro"></div>
+
+            <div id="our-div"></div>
+        </main>
+
+        <script>
+            //var bigImage = document.getElementById("girl");
+            /*alert(bigImage.getAttribute("src")); // Alerts HD-wallpaper-cyberpunk-style-modern-girl-cyberpunk-scifi-artist-artwork-digital-art-artstation.jpg*/
+            //bigImage.setAttribute("src", "../images/magda_katgoodloe-insta.jpg");
+
+            var introDiv = document.getElementsByClassName("intro");
+            introDiv[1].innerHTML = "<p>This is our intro text<p>";
+            introDiv[0].innerHTML = "<h2>DOM<h2>";
+            introDiv[2].innerHTML = "<p><img src=\"../images/HD-wallpaper-cyberpunk-style-modern-girl-cyberpunk-scifi-artist-artwork-digital-art-artstation.jpg\" alt=\"cybergirl\" id=\"girl\"></p>";
+            /*document.getElementsByClassName("intro")[0].style.color = "#00f"; Same as the code below*/
+            introDiv[0].style.color = "#053f";
+            var h2Color = introDiv[0].style.color;
+
+            var mainTitle = document.querySelectorAll("h1");
+            mainTitle[0].style.color = "#03f";
+
+            var ourDiv = document.getElementById("our-div");
+            var newHeading = document.createElement("h2");
+            var headingName = document.createTextNode("Test2");
+            newHeading.appendChild(headingName);
+            ourDiv.appendChild(newHeading);
+
+            // Make all h2 elements font color green
+            var mySubheadings = document.querySelectorAll("h2");
+            for(var i = 0; i < mySubheadings.length; i++) {
+                mySubheadings[i].style.color = h2Color;
+            }
+        </script>
+    </body>
+</html>

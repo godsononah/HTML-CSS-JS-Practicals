@@ -1,0 +1,25 @@
+body {
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: lightpink;
+    background-image: url(../images/scifi-city-scenery-wallpaper-2560x1920_27.jpg), url(../images/custom_cyborg.png);
+    background-repeat: no-repeat, repeat-y;
+    background-position: left top, right top;
+    background-size: 1215px auto, auto;
+    background-attachment: fixed;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+header{
+    color: blanchedalmond;
+    text-align: center;
+}
+h1 {
+    font-weight: bold; color: rgb(211, 238, 160);
+    font-size: 3em;
+}
+h2 {color: aqua;}
+h2, h3, h4, h5, h6 {text-decoration: underline;}
+hr {color: black;}
+footer, header p {color: silver;}

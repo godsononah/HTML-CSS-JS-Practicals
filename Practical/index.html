@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Learning Web Development Practical</title>
+  <style>
+    body {background-color: mistyrose;}
+    a {
+      color: rgb(37, 49, 3);
+      text-decoration: none;
+    }
+    a:focus {
+      color: black;
+      background-color: yellow;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    a:active {
+      color: red;
+      background-color: #ffd9d9;
+    }
+    h1 {
+      color: darkblue;
+      font-weight: bold;
+      text-align: center;
+      /*text-transform: capitalize;*/
+      text-shadow: .2em .2em .3em silver;
+    }
+    header p {
+      text-align: center;
+      color: silver;
+    }
+    #HTML {
+      color: rgb(241, 14, 14);
+      font-weight: bold;
+      text-shadow: .2em .2em .1em silver;
+    }
+    #CSS {
+      color: blue;
+      font-weight: bold;
+      line-height: 2em;
+      text-shadow: .2em .2em .1em silver;
+    }
+    #JS {
+      color: rgb(128, 160, 13);
+      font-weight: bold;
+      line-height: 2em;
+      text-shadow: .2em .2em .1em silver;
+    }
+    #HTML, #CSS, #JS {
+      border: 2px solid rgb(216, 210, 210);
+      background-color: white;
+      border-radius: 1em;
+      text-shadow: none;
+      padding: 1em 1.5em;
+    }
+    #HTML-topics {list-style-type: disc;}
+    #CSS-topics {list-style-type: circle;}
+    #JS-topics {list-style-type: square;}
+    #HTML-field {background-color: aquamarine;}
+    #CSS-field {background-color: rgb(199, 130, 173);}
+    #JS-field {background-color: rgb(156, 156, 187);}
+    #HTML-field, #CSS-field, #JS-field {
+      margin: 2em 5em;
+    }
+    footer p {
+      color: darkmagenta;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Topics in Web Development</h1>
+    <p>by Godson Onah, <time datetime="2022-1-1">January 1, 2022</time></p>
+  </header>
+
+  <nav id="topics">
+    <fieldset id="HTML-field">
+      <legend id="HTML">HTML Topics</legend>
+      <ul id="HTML-topics">
+        <li><a href="HTML/type_design.html" target="_blank">Type Design</a></li>
+        <li><a href="HTML/long_quotation.html" target="sample">Long Quotation</a></li>
+        <li><a href="HTML/preformatted_text.html" target="sample">Preformatted Text</a></li>
+        <li><a href="HTML/sections_and_articles.html">Sections and Articles</a></li>
+        <li><a href="HTML/inline_element_roundup.html">The Inline Element Roundup</a></li>
+        <li><a href="HTML/generic_elements.html">Generic Elements</a></li>
+        <li><a href="HTML/improving_accessibility_with_aria.html">Improving Accessibility with Aria</a></li>
+        <li><a href="HTML/adding_svg_images.html" target="_blank">Adding SVG Images</a></li>
+        <li><a href="HTML/tables.html" target="_blank">Tables</a></li>
+        <li><a href="HTML/table_exercise.html" target="_blank">Table Challenge</a></li>
+        <li><a href="HTML/mailing_list.html" target="_blank">Mailing List Signup</a></li>
+        <li><a href="HTML/forms.html" target="sample">Forms</a></li>
+        <li><a href="HTML/embedded_media.html" target="sample">Embedded Media</a></li>
+        <li><a href="HTML/play_video.html" target="_blank">Play the Wind Tunnel Testing Video</a></li>
+        <li><a href="HTML/canvas.html" target="_blank">Canvas</a></li>
+      </ul>
+    </fieldset>
+
+    <fieldset id="CSS-field">
+      <legend id="CSS">CSS Topics</legend>
+      <ul id="CSS-topics">
+        <li><a href="CSS/cooking.html" target="sample">Cooking Page</a></li>
+        <li><a href="CSS/color.html" target="sample">Color</a></li>
+        <li><a href="CSS/pseudoclasses.html" target="sample">Pseudo-Classes</a></li>
+        <li><a href="CSS/background_images.html" target="sample">Background Images 1</a></li>
+        <li><a href="CSS/background_images2.html" target="sample">Background Images 2</a></li>
+        <li><a href="CSS/gradients.html" target="sample">Like a Rainbow (Gradients)</a></li>
+        <li><a href="CSS/elementbox.html" target="sample">The Element Box</a></li>
+        <li><a href="CSS/floating&positioning.html" target="sample">Floating and Positioning</a></li>
+        <li><a href="CSS/flexbox.html" target="sample">Flexbox</a></li>
+        <li><a href="CSS/gridbox.html" target="sample">Grid Layout</a></li>
+        <li><a href="CSS/rwd.html" target="sample">Responsive Web Design</a></li>
+        <li><a href="CSS/transitions.html" target="sample">Transitions, Transforms, and Animation</a></li>
+      </ul>
+    </fieldset>
+
+    <fieldset id="JS-field">
+      <legend id="JS">Javascript Topics</legend>
+      <ul id="JS-topics">
+        <li><a href="JS/dom.html" target="sample">Document Object Model (DOM)</a></li>
+        <li><a href="JS/basic_function.html" target="sample">Basic Function</a></li>
+        <li><a href="JS/hotel.html" target="sample">Hotel Facilities</a></li>
+        <li><a href="JS/hotel_availability.html" target="sample">Hotel Availability</a></li>
+        <li><a href="JS/window_object.html" target="sample">Window Object</a></li>
+        <li><a href="JS/document_object.html" target="sample">Document Object</a></li>
+        <li><a href="JS/hotel_prices.html" target="sample">Hotel Prices</a></li>
+        <li><a href="JS/level.html" target="sample">Game Level</a></li>
+        <li><a href="JS/rounds.html" target="sample">Game Rounds</a></li>
+        <li><a href="JS/list_king.html" target="sample">List King</a></li>
+        <li>HTML Event Handlers: <a href="JS/onblur.html" target="sample">onblur 1</a>, <a href="JS/onblur2.html" target="sample">onblur 2</a>, <a href="JS/onblur3.html" target="sample">onblur 3</a></li>
+      </ul>
+    </fieldset>
+  </nav>
+
+  <footer>
+    <br>
+    <br>
+    <hr>
+    <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+  </footer>
+</body>
+
+</html>

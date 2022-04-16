@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Background Images</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-size: 100%;
+                background-color: lightpink;
+                background-image: url(../images/scifi-city-scenery-wallpaper-2560x1920_27.jpg), url(../images/custom_cyborg.png);
+                background-repeat: no-repeat, repeat-y;
+                background-position: left top, right top;
+                /*background-size: 1220px auto, auto;*/
+                background-size: 95% auto, 5% auto;
+                background-attachment: fixed;
+            }
+            header{
+                color: blanchedalmond;
+                text-align: center;
+            }
+            header h1 {
+                font-weight: bold; color: orangered;
+                font-size: 3em;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 4em;
+                font-family: cursive;
+                color: blueviolet;
+                border: 3px ridge goldenrod;
+                padding: 1em;
+                text-align: center;
+                margin: auto;
+                width: 50%;
+                background-color: bisque;
+            }
+            p {color: white; text-align: center;}
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Background Images</h1>
+            <p>by Godson Onah</p>
+        </header>
+
+        <p>I'm just testing...</p>
+
+        <script>
+            // Shows a greeting that differs according to the time of the day
+
+            var today = new Date();
+            var hourNow = today.getHours();
+            var greeting;
+
+            if (hourNow > 18) {
+                greeting = 'Good evening!';
+            } else if (hourNow > 12) {
+                greeting = 'Good afternoon!';
+            } else if (hourNow > 0) {
+                greeting = 'Good morning!';
+            } else {
+                greeting = 'Welcome';
+            }
+
+            document.write('<h3>' + greeting + '</h3>');
+        </script>
+    </body>
+</html>

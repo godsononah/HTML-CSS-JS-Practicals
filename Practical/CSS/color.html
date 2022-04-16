@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Color</title>
+        <style>
+            header p {color: silver;}
+            #fore {
+                border: 4px dashed;
+                color: green;
+            }
+            #back {
+                border: 4px dashed;
+                color: green;
+                background-color: #c6de89;
+            }
+            .glossary {
+                color: #0378a9; /* blue */
+                background-color: yellow;
+            }
+            #paddingbox, #borderbox, #contentbox {
+                padding: 1em;
+                border: 4px dashed;
+                color: green;
+                background-color: #C6DE89;
+            }
+            #paddingbox {background-clip: padding-box;}
+            #borderbox {background-clip: border-box;}
+            #contentbox {background-clip: content-box;}
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>COLOR</h1>
+            <p>by Godson Onah, <time datetime="2022-03-26">March 26, 2022</time></p>
+        </header>
+
+        <h2>Foreground Color</h2>
+        <blockquote id="fore">
+            In the latitude of central New England, cabbages are not secure from injury from frost with less than a foot of earth thrown over the heads. In mild winters a covering of half that depth will be sufficient; but as we have no prophets to foretell our mild winters. a foot of earth is safer than six inches.
+        </blockquote>
+
+        <h2>Background Color</h2>
+        <blockquote id="back">
+            In the latitude of central New England, cabbages are not secure from injury from frost with less than a foot of earth thrown over the heads. In mild winters a covering of half that depth will be sufficient; but as we have no prophets to foretell our mild winters. a foot of earth is safer than six inches.
+        </blockquote>
+
+        <p>Every variety of cabbage had their origin in the wild cabbage of Europe (<dfn class="glossary"><i>Brassica oleracea</i></dfn>)</p>
+
+        <h2>Background Clip</h2>
+        <h3>padding-box</h3>
+        <blockquote id="paddingbox">
+            In the latitude of central New England, cabbages are not secure from injury from frost with less than a foot of earth thrown over the heads. In mild winters a covering of half that depth will be sufficient; but as we have no prophets to foretell our mild winters. a foot of earth is safer than six inches.
+        </blockquote>
+
+        <h3>border-box</h3>
+        <blockquote id="borderbox">
+            In the latitude of central New England, cabbages are not secure from injury from frost with less than a foot of earth thrown over the heads. In mild winters a covering of half that depth will be sufficient; but as we have no prophets to foretell our mild winters. a foot of earth is safer than six inches.
+        </blockquote>
+
+        <h3>content-box</h3>
+        <blockquote id="contentbox">
+            In the latitude of central New England, cabbages are not secure from injury from frost with less than a foot of earth thrown over the heads. In mild winters a covering of half that depth will be sufficient; but as we have no prophets to foretell our mild winters. a foot of earth is safer than six inches.
+        </blockquote>
+
+        <footer>
+            <br>
+            <br>
+            <hr>
+            <p><small>Copyright &copy;2022 Godson Onah.</small></p>
+        </footer>
+    </body>
